@@ -121,8 +121,8 @@ public class Login extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 if (dataSnapshot.exists()) {
-//                    username.setError(null);
-//                    username.setErrorEnabled(false);
+                    username.setError(null);
+                    username.setErrorEnabled(false);
 
                     String name = "";
                     boolean found = false;
@@ -145,8 +145,8 @@ public class Login extends AppCompatActivity {
 
                     if (passwordFromDB.equals(userEnteredPassword)) {
 
-//                        password.setError(null);
-//                        password.setErrorEnabled(false);
+                        password.setError(null);
+                        password.setErrorEnabled(false);
 
 
                         String usernameFromDB = username.getEditText().getText().toString();

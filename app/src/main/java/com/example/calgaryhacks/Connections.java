@@ -23,7 +23,7 @@ public class Connections extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_connections);
 
         Resources res = getResources();
 

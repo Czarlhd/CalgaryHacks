@@ -690,7 +690,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_marginLeft="5dp"
                         android:paddingLeft="10dp"
-                        android:src="@mipmap/profile_pic_foreground" />
+                        android:src="@drawable/profile_pic_round" />
 
                     <TextView
                         android:id="@+id/textView25"
@@ -826,7 +826,7 @@
                         android:layout_marginLeft="5dp"
                         android:paddingLeft="10dp"
 
-                        android:src="@mipmap/profile_pic_round" />
+                        android:src="@drawable/profile_pic_round" />
 
                     <TextView
                         android:id="@+id/textView65"

@@ -533,6 +533,7 @@
             android:layout_width="150dp"
             android:layout_height="60dp"
             android:fontFamily="casual"
+            android:onClick="findConnections"
             android:text="Find Connections!"
             android:textStyle="bold"
             android:translationX="130dp"
