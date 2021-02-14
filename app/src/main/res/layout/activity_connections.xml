@@ -261,7 +261,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_marginLeft="5dp"
                         android:paddingLeft="10dp"
-                        android:src="@mipmap/profile_pic_foreground" />
+                        android:src="@drawable/michael_scott_round"/>
 
                     <TextView
                         android:id="@+id/textView2"
@@ -271,7 +271,7 @@
                         android:layout_margin="5dp"
                         android:fontFamily="casual"
                         android:paddingLeft="15dp"
-                        android:text="Cesar Lahoud,\nComputer Engineer, U1\n\nECSE 206\nECSE 210\nECSE 321\nECSE 324\nECSE 211"
+                        android:text="Michael Scott,\nComputer Engineer, U1\n\nECSE 206\nECSE 210\nECSE 321\nECSE 324\nECSE 211"
                         android:textSize="11sp" />
 
                     <CheckBox
@@ -328,7 +328,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_marginLeft="5dp"
                         android:paddingLeft="10dp"
-                        android:src="@mipmap/profile_pic3_foreground" />
+                        android:src="@drawable/jim_halpert_round"/>
 
                     <TextView
                         android:id="@+id/textView3"
@@ -338,7 +338,7 @@
                         android:layout_margin="5dp"
                         android:fontFamily="casual"
                         android:paddingLeft="15dp"
-                        android:text="Tamara Zard,\nComputer Engineer, U1\n\nECSE 206\nECSE 210\nECSE 321\nECSE 324\nPSYC 101"
+                        android:text="Jim Halpert,\nComputer Engineer, U1\n\nECSE 206\nECSE 210\nECSE 321\nECSE 324\nPSYC 101"
                         android:textSize="11sp" />
 
                     <CheckBox
@@ -397,7 +397,7 @@
                         android:layout_marginLeft="5dp"
                         android:paddingLeft="10dp"
 
-                        android:src="@mipmap/profile_pic4_foreground" />
+                        android:src="@drawable/dwight_schrute_round" />
 
                     <TextView
                         android:id="@+id/textView6"
@@ -407,7 +407,7 @@
                         android:layout_margin="5dp"
                         android:fontFamily="casual"
                         android:paddingLeft="15dp"
-                        android:text="Kiki Xiao,\nComputer Science, U1\n\nCOMP 202\nCOMP 273\nCOMP 206\nCOMP 303\nCOMP 250"
+                        android:text="Dwight Schrute,\nComputer Science, U1\n\nCOMP 202\nCOMP 273\nCOMP 206\nCOMP 303\nCOMP 250"
                         android:textSize="11sp" />
 
                     <CheckBox
@@ -466,7 +466,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_marginLeft="5dp"
                         android:paddingLeft="10dp"
-                        android:src="@mipmap/profile_pic_foreground" />
+                        android:src="@drawable/pam_beesley_round" />
 
                     <TextView
                         android:id="@+id/textView7"
@@ -476,7 +476,7 @@
                         android:layout_margin="5dp"
                         android:fontFamily="casual"
                         android:paddingLeft="15dp"
-                        android:text="John Doe,\nPsychology, U0\n\nPSYCh 101\nPSYCH 211\nMGCR 352\nMATH 123"
+                        android:text="Pam Beesley,\nPsychology, U0\n\nPSYCh 101\nPSYCH 211\nMGCR 352\nMATH 123"
                         android:textSize="11sp" />
 
                     <CheckBox
@@ -561,7 +561,7 @@
                         android:layout_marginLeft="5dp"
                         android:paddingLeft="10dp"
 
-                        android:src="@mipmap/profile_pic4_foreground" />
+                        android:src="@drawable/profile_pic_round" />
 
                     <TextView
                         android:id="@+id/textView62"
@@ -757,7 +757,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_marginLeft="5dp"
                         android:paddingLeft="10dp"
-                        android:src="@mipmap/profile_pic3_foreground" />
+                        android:src="@drawable/profile_pic_round" />
 
                     <TextView
                         android:id="@+id/textView35"
@@ -826,7 +826,7 @@
                         android:layout_marginLeft="5dp"
                         android:paddingLeft="10dp"
 
-                        android:src="@mipmap/profile_pic4_foreground" />
+                        android:src="@mipmap/profile_pic_round" />
 
                     <TextView
                         android:id="@+id/textView65"

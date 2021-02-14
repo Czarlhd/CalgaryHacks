@@ -1,7 +1,11 @@
 package com.example.calgaryhacks;
 
+import java.util.ArrayList;
+
 public class UserHelperClass {
     String username_mcgill, password_mcgill, username_fb, password_fb;
+    String major, year, name;
+    ArrayList<String> courses;
 
     public UserHelperClass(String username_mcgill, String password_mcgill, String username_fb, String password_fb) {
         this.username_mcgill = username_mcgill;
@@ -10,8 +14,23 @@ public class UserHelperClass {
         this.password_fb = password_fb;
     }
 
+    public  UserHelperClass(String name, ArrayList<String> c, String m, String y){
+        this.major=m;
+        this.year=y;
+        this.name=name;
+        this.courses=c;
+    }
+
     public UserHelperClass() {
     }
+
+    public String getMajor(){
+        return this.major;
+    }
+
+    public String getYear(){ return this.year;}
+
+    public ArrayList<String> getCourses(){ return this.courses;}
 
     public String getUsername_mcgill() {
         return username_mcgill;

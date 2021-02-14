@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">CalgaryHacks</string>
+
+    <string-array name="filter_array">
+        <item>All</item>
+        <item>Courses</item>
+        <item>Major</item>
+        <item>Year</item>
+    </string-array>
+
 </resources>
