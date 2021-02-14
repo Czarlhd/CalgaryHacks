@@ -269,6 +269,7 @@
                         android:layout_height="140dp"
                         android:layout_gravity="center_vertical"
                         android:layout_margin="5dp"
+                        android:translationY="2dp"
                         android:fontFamily="casual"
                         android:paddingLeft="15dp"
                         android:text="Michael Scott,\nComputer Engineer, U1\n\nECSE 206\nECSE 210\nECSE 321\nECSE 324\nECSE 211"
@@ -336,6 +337,7 @@
                         android:layout_height="140dp"
                         android:layout_gravity="center_vertical"
                         android:layout_margin="5dp"
+                        android:translationY="2dp"
                         android:fontFamily="casual"
                         android:paddingLeft="15dp"
                         android:text="Jim Halpert,\nComputer Engineer, U1\n\nECSE 206\nECSE 210\nECSE 321\nECSE 324\nPSYC 101"
@@ -406,6 +408,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_margin="5dp"
                         android:fontFamily="casual"
+                        android:translationY="2dp"
                         android:paddingLeft="15dp"
                         android:text="Dwight Schrute,\nComputer Science, U1\n\nCOMP 202\nCOMP 273\nCOMP 206\nCOMP 303\nCOMP 250"
                         android:textSize="11sp" />
@@ -475,6 +478,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_margin="5dp"
                         android:fontFamily="casual"
+                        android:translationY="2dp"
                         android:paddingLeft="15dp"
                         android:text="Pam Beesley,\nPsychology, U0\n\nPSYCh 101\nPSYCH 211\nMGCR 352\nMATH 123"
                         android:textSize="11sp" />
@@ -690,7 +694,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_marginLeft="5dp"
                         android:paddingLeft="10dp"
-                        android:src="@drawable/profile_pic_round" />
+                        android:src="@drawable/tamara_round"/>
 
                     <TextView
                         android:id="@+id/textView25"
@@ -698,6 +702,7 @@
                         android:layout_height="140dp"
                         android:layout_gravity="center_vertical"
                         android:layout_margin="5dp"
+                        android:translationY="2dp"
                         android:fontFamily="casual"
                         android:paddingLeft="15dp"
                         android:text="Cesar Lahoud,\nComputer Engineer, U1\n\nECSE 206\nECSE 210\nECSE 321\nECSE 324\nECSE 211"
@@ -757,7 +762,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_marginLeft="5dp"
                         android:paddingLeft="10dp"
-                        android:src="@drawable/profile_pic_round" />
+                        android:src="@drawable/cesar_round"/>
 
                     <TextView
                         android:id="@+id/textView35"
@@ -766,6 +771,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_margin="5dp"
                         android:fontFamily="casual"
+                        android:translationY="2dp"
                         android:paddingLeft="15dp"
                         android:text="Tamara Zard,\nComputer Engineer, U1\n\nECSE 206\nECSE 210\nECSE 321\nECSE 324\nPSYC 101"
                         android:textSize="11sp" />
@@ -826,7 +832,7 @@
                         android:layout_marginLeft="5dp"
                         android:paddingLeft="10dp"
 
-                        android:src="@drawable/profile_pic_round" />
+                        android:src="@drawable/kiki_round" />
 
                     <TextView
                         android:id="@+id/textView65"
@@ -835,6 +841,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_margin="5dp"
                         android:fontFamily="casual"
+                        android:translationY="2dp"
                         android:paddingLeft="15dp"
                         android:text="Kiki Xiao,\nComputer Science, U1\n\nCOMP 202\nCOMP 273\nCOMP 206\nCOMP 303\nCOMP 250"
                         android:textSize="11sp" />
