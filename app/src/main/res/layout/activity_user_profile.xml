@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserProfile"
+    android:orientation="vertical">
+
+    <!--    First Section-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="#FFB10E02"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/profile_pic2_round"/>
+
+        <TextView
+            android:id="@+id/full_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/profile_image"
+            android:fontFamily="casual"
+            android:includeFontPadding="false"
+            android:text="Carl Machaalani"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/full_name"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="casual"
+            android:layout_toRightOf="@+id/profile_image"
+            android:includeFontPadding="false"
+            android:text="U1 Computer Science and Statistics"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+
+    </RelativeLayout>
+
+
+    <!--    Second Section-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_marginTop="-100dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="#FFB10E02"
+            app:cardElevation="10dp"
+            android:layout_margin="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:visibility="visible">
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/bell_icon"-->
+<!--                    android:layout_width="70dp"-->
+<!--                    android:layout_height="70dp"-->
+<!--                    android:translationX="110dp"-->
+<!--                    android:layout_centerHorizontal="true"-->
+<!--                    android:src="@drawable/bell_icon_round" />-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="-94dp"
+                    android:fontFamily="casual"
+                    android:text="My Messenger Groups:"
+                    android:textColor="#F3DB0B"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <GridLayout
+                    android:id="@+id/profileLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="0dp"
+                    android:columnCount="1"
+                    android:columnOrderPreserved="false"
+                    android:rowCount="2"
+                    android:rowOrderPreserved="false">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:translationX="-7dp"
+                    android:translationY="43dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:id="@+id/crn1"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:drawable/btn_default"
+                        android:backgroundTint="@color/white"
+                        android:clickable="true"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/noti_icon_round"/>
+
+                        <TextView
+                            android:id="@+id/textView1"
+                            android:layout_width="120dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="5dp"
+                            android:fontFamily="casual"
+                            android:onClick="goToFb"
+                            android:translationY="13dp"
+                            android:translationX="-20dp"
+                            android:paddingLeft="15dp"
+                            android:text="COMP 202"
+                            android:textSize="20sp"/>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:translationX="160dp"
+                    android:translationY="-27dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:id="@+id/crn2"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:drawable/btn_default"
+                        android:backgroundTint="@color/white"
+                        android:clickable="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="120dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="5dp"
+                            android:fontFamily="casual"
+                            android:onClick="goToFb"
+                            android:translationY="13dp"
+                            android:translationX="7dp"
+                            android:paddingLeft="15dp"
+                            android:text="MATH 324"
+                            android:textSize="20sp"/>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:translationY="0dp"
+                    android:translationX="-7dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:id="@+id/crn3"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:drawable/btn_default"
+                        android:backgroundTint="@color/white"
+                        android:clickable="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="120dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="5dp"
+                            android:fontFamily="casual"
+                            android:onClick="goToFb"
+                            android:translationY="13dp"
+                            android:translationX="10dp"
+                            android:paddingLeft="15dp"
+                            android:text="CHEM 120"
+                            android:textSize="20sp"/>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:translationX="161dp"
+                    android:translationY="-70dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:id="@+id/crn4"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:drawable/btn_default"
+                        android:backgroundTint="@color/white"
+                        android:clickable="true"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/noti_icon_round"/>
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="120dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="5dp"
+                            android:fontFamily="casual"
+                            android:onClick="goToFb"
+                            android:translationY="13dp"
+                            android:translationX="-20dp"
+                            android:paddingLeft="15dp"
+                            android:text="COMP 250"
+                            android:textSize="20sp"/>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                </GridLayout>
+
+<!--                <TextView-->
+<!--                    android:id="@+id/payment_label"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:fontFamily="casual"-->
+<!--                    android:includeFontPadding="false"-->
+<!--                    android:text="COMP 202      COMP 250"-->
+<!--                    android:textColor="#FFFFFF"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:textStyle="bold" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/payment_desc"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@+id/payment_label"-->
+<!--                    android:layout_centerHorizontal="true"-->
+<!--                    android:fontFamily="casual"-->
+<!--                    android:includeFontPadding="false"-->
+<!--                    android:text="PSYCH 324      MATH 223"-->
+<!--                    android:textColor="#FFFFFF"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:textStyle="bold" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@+id/payment_desc"-->
+<!--                    android:layout_centerHorizontal="true"-->
+<!--                    android:fontFamily="casual"-->
+<!--                    android:includeFontPadding="false"-->
+<!--                    android:text="CHEM 206"-->
+<!--                    android:textColor="#FFFFFF"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:textStyle="bold" />-->
+
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+<!--        <com.google.android.material.card.MaterialCardView-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="125dp"-->
+<!--            android:layout_weight="1"-->
+<!--            app:cardBackgroundColor="#FFB10E02"-->
+<!--            app:cardElevation="10dp"-->
+<!--            android:layout_margin="10dp">-->
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:padding="5dp">-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/music_icon"-->
+<!--                    android:layout_width="30dp"-->
+<!--                    android:layout_height="30dp"-->
+<!--                    android:src="@drawable/music_icon_round"-->
+<!--                    android:layout_centerHorizontal="true"/>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/hobby1"-->
+<!--                    android:layout_marginTop="15dp"-->
+<!--                    android:layout_below="@+id/music_icon"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_centerHorizontal="true"-->
+<!--                    android:fontFamily="casual"-->
+<!--                    android:includeFontPadding="false"-->
+<!--                    android:text="Reading  Singing"-->
+<!--                    android:textColor="#FFFFFF"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:textStyle="bold" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/hobby2"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@+id/hobby1"-->
+<!--                    android:layout_centerHorizontal="true"-->
+<!--                    android:fontFamily="casual"-->
+<!--                    android:includeFontPadding="false"-->
+<!--                    android:text="Biking"-->
+<!--                    android:textColor="#FFFFFF"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:textStyle="bold"/>-->
+
+<!--            </RelativeLayout>-->
+
+<!--        </com.google.android.material.card.MaterialCardView>-->
+
+
+<!--        <com.google.android.material.card.MaterialCardView-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="125dp"-->
+<!--            android:layout_weight="1"-->
+<!--            app:cardBackgroundColor="#FFB10E02"-->
+<!--            app:cardElevation="10dp"-->
+<!--            android:layout_margin="10dp">-->
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:padding="5dp"-->
+<!--                android:visibility="visible">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="30dp"-->
+<!--                    android:layout_height="30dp"-->
+<!--                    android:layout_centerHorizontal="true"-->
+<!--                    android:src="@drawable/book_icon_round" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/payment_label"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:fontFamily="casual"-->
+<!--                    android:includeFontPadding="false"-->
+<!--                    android:text="COMP 202      COMP 250"-->
+<!--                    android:textColor="#FFFFFF"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:textStyle="bold" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/payment_desc"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@+id/payment_label"-->
+<!--                    android:layout_centerHorizontal="true"-->
+<!--                    android:fontFamily="casual"-->
+<!--                    android:includeFontPadding="false"-->
+<!--                    android:text="PSYCH 324      MATH 223"-->
+<!--                    android:textColor="#FFFFFF"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:textStyle="bold" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@+id/payment_desc"-->
+<!--                    android:layout_centerHorizontal="true"-->
+<!--                    android:fontFamily="casual"-->
+<!--                    android:includeFontPadding="false"-->
+<!--                    android:text="CHEM 206"-->
+<!--                    android:textColor="#FFFFFF"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:textStyle="bold" />-->
+
+<!--            </RelativeLayout>-->
+<!--        </com.google.android.material.card.MaterialCardView>-->
+
+<!--        <com.google.android.material.card.MaterialCardView-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="125dp"-->
+<!--            android:layout_weight="1"-->
+<!--            app:cardBackgroundColor="#FFB10E02"-->
+<!--            app:cardElevation="10dp"-->
+<!--            android:layout_margin="10dp">-->
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:padding="5dp">-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/music_icon"-->
+<!--                    android:layout_width="30dp"-->
+<!--                    android:layout_height="30dp"-->
+<!--                    android:src="@drawable/music_icon_round"-->
+<!--                    android:layout_centerHorizontal="true"/>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/hobby1"-->
+<!--                    android:layout_marginTop="15dp"-->
+<!--                    android:layout_below="@+id/music_icon"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_centerHorizontal="true"-->
+<!--                    android:fontFamily="casual"-->
+<!--                    android:includeFontPadding="false"-->
+<!--                    android:text="Reading  Singing"-->
+<!--                    android:textColor="#FFFFFF"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:textStyle="bold" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/hobby2"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@+id/hobby1"-->
+<!--                    android:layout_centerHorizontal="true"-->
+<!--                    android:fontFamily="casual"-->
+<!--                    android:includeFontPadding="false"-->
+<!--                    android:text="Biking"-->
+<!--                    android:textColor="#FFFFFF"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:textStyle="bold" />-->
+
+<!--            </RelativeLayout>-->
+
+<!--        </com.google.android.material.card.MaterialCardView>-->
+
+
+    </LinearLayout>
+
+    <!--    Third Section-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pronoun">
+
+            <ImageView
+                android:layout_width="44dp"
+                android:layout_height="39dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/transgender_icon_round"
+                android:translationX="17dp"
+                android:translationY="-49dp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/full_name_info"
+                android:layout_width="380dp"
+                android:layout_height="57dp"
+                android:editable="false"
+                android:text="He/Him"
+                android:translationX="65dp"
+                tools:ignore="Deprecated" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:translationY="-25dp"
+            android:hint="Hobbies">
+
+            <ImageView
+                android:layout_width="44dp"
+                android:layout_height="39dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/light_bulb_round"
+                android:translationX="17dp"
+                android:translationY="-49dp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="380dp"
+                android:layout_height="57dp"
+                android:editable="false"
+                android:text="Reading - Singing - Biking"
+                android:translationX="65dp"
+                tools:ignore="Deprecated" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/findconnections"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:fontFamily="casual"
+            android:text="Find Connections!"
+            android:textStyle="bold"
+            android:translationX="130dp"
+            android:translationY="-50dp"
+            app:backgroundTint="#B10E02" />
+
+    </LinearLayout>
+</LinearLayout>

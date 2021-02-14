@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "212650929306",
+    "project_id": "calgaryhacks-64586",
+    "storage_bucket": "calgaryhacks-64586.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:212650929306:android:432f4554e01212999f0323",
+        "android_client_info": {
+          "package_name": "com.example.calgaryhacks"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "212650929306-kd9huo4dpck5i2vm72grjirbuads0lb6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-zzczlsraYZr9bhaah_jLCZmaTnvIjzQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "212650929306-kd9huo4dpck5i2vm72grjirbuads0lb6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
