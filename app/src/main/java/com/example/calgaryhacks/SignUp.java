@@ -143,8 +143,9 @@ public class SignUp extends AppCompatActivity {
                 name += " ";
                 found = true;
             }
-            else if (i==0) {
+            else if (i==0 || found) {
                 name += Character.toUpperCase(mcgillU.charAt(i));
+                found = false;
             }
             else {
                 name += mcgillU.charAt(i);

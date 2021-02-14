@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
 public class UserProfile extends AppCompatActivity {
 
@@ -27,5 +28,16 @@ public class UserProfile extends AppCompatActivity {
 
     public void showAllUserData() {
 
+        // Hook
+        TextView fullName = findViewById(R.id.full_name);
+
+        // Start intent
+        Intent intent = getIntent();
+
+        // gel full name from database
+        String name = intent.getStringExtra("fullName");
+
+        // set the views
+        fullName.setText(name);
     }
 }

@@ -125,9 +125,15 @@ public class Login extends AppCompatActivity {
 //                    username.setErrorEnabled(false);
 
                     String name = "";
+                    boolean found = false;
                     for (int i = 0; userEnteredUsername.indexOf("@")!=i; i++) {
                         if (i==userEnteredUsername.indexOf(".")) {
                             name += " ";
+                            found = true;
+                        }
+                        else if (i==0 || found) {
+                            name += Character.toUpperCase(userEnteredUsername.charAt(i));
+                            found = false;
                         }
                         else {
                             name += userEnteredUsername.charAt(i);
@@ -146,7 +152,7 @@ public class Login extends AppCompatActivity {
                         String usernameFromDB = username.getEditText().getText().toString();
                         System.out.println("USERNAME FROM DB" + usernameFromDB);
                         Intent intent = new Intent (getApplicationContext(), UserProfile.class);
-                        intent.putExtra("fullname", name);
+                        intent.putExtra("fullName", name);
                         intent.putExtra("username", usernameFromDB);
                         intent.putExtra("password", passwordFromDB);
 
@@ -160,7 +166,7 @@ public class Login extends AppCompatActivity {
                 }
                 else {
                     System.out.println("WRONG EMAIL");
-                    username.setError("email does not exist");
+                    username.setError("Email does not exist");
                     username.requestFocus();
                 }
             }
